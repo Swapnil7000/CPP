@@ -5,7 +5,7 @@ int main()
 {
 string str;
 int i;
-int vowelCount=0,consonantCount=0,digitCount=0,spacesCount=0;
+int vowelCount=0,totalCount=0,digitCount=0,spacesCount=0;
 cout<<"Enter the string:";
 getline(cin,str);
 for(i=0;i<str.length();i++)
@@ -18,9 +18,9 @@ for(i=0;i<str.length();i++)
   {
       ++digitCount;
   }
-  if(str[i]>'A'&&str[i]<='Z'||str[i]>'a'&&str[i]<='z')
+  if((str[i]>='A'&&str[i]<='Z')||(str[i]>='a'&&str[i]<='z'))
   {
-      ++consonantCount;
+      ++totalCount;
   }
   if(str[i]==' ')
   {
@@ -28,7 +28,7 @@ for(i=0;i<str.length();i++)
   }
 }
 cout<<"Number of vowels in string are:"<<vowelCount<<endl;
-cout<<"Number of consonants in string are:"<<consonantCount<<endl;
+cout<<"Number of consonants in string are:"<<totalCount-vowelCount<<endl;
 cout<<"Number of digits in string are:"<<digitCount<<endl;
 cout<<"Number of spaces in string are:"<<spacesCount<<endl;
 return 0;
