@@ -18,7 +18,7 @@ for(i=0;i<str.length();i++)
   {
       ++digitCount;
   }
-  if(str[i]>'A'&&str[i]<='Z'||str[i]>'a'||str[i]<'z')
+  if(str[i]>'A'&&str[i]<='Z'||str[i]>'a'&&str[i]<='z')
   {
       ++consonantCount;
   }
