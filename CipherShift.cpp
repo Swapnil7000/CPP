@@ -11,7 +11,7 @@ int main()
     cin >> s;
     if (isupper(ch))
     {
-        CipherShift = char(int((ch + s - 65) % 26 + 65)); // (s+char)mod26 to have value of cipher character -65 to make it  a cipher
+        CipherShift = char(int((ch + s - 65) % 26 + 65)); // (s+char)mod26 -65 to make it  a cipher
         cout << "The value shifted by " << s << " steps is " << CipherShift;
     }
     else
