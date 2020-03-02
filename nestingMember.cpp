@@ -3,11 +3,13 @@
 using namespace std;
 class binary
 {
+private:
+    void chck_bin(void);
     string s;
 
 public:
     void read(void);
-    void chck_bin(void);
+
     void ones_compli(void);
     void display(void);
 };
@@ -39,6 +41,7 @@ void binary::ones_compli(void)
 }
 void binary::read(void)
 {
+    chck_bin();
     cout << "Enter the binary number" << endl;
     cin >> s;
 }
@@ -54,7 +57,6 @@ int main()
 {
     binary b;
     b.read();
-    b.chck_bin();
     b.display();
     b.ones_compli();
     b.display();
