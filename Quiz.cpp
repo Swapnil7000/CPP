@@ -5,7 +5,7 @@ class Distance
 {
 public:
     int a, b;
-    friend float Distance(Distance o1, Distance o2);
+    friend float DistanceClac(Distance o1, Distance o2);
     void setPoint(int x, int y)
     {
         a = x;
