@@ -3,7 +3,7 @@ using namespace std;
 int BinarySearch(int a[], int x, int n)
 {
     int left = 1, right = n;
-    int mid = (left + right) / 2;
+    int mid = left + (right - left) / 2; //Will not overflow
     while (left <= right)
     {
         mid = (left + right) / 2;
